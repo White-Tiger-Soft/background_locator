@@ -114,6 +114,7 @@ class IsolateHolderService : Service() {
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationMsg)
                 .setSmallIcon(icon)
+                .setStyle(NotificationCompat.BigTextStyle().bigText(notificationMsg))
                 .setColor(notificationIconColor)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setContentIntent(pendingIntent)
